@@ -1,19 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap');
 body, html {
   height: 100%;
   margin: 0px; 
 }
-
 /* The hero image */
 .hero-image {
-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1612195325284-c16da65be55d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=857&q=80");
+background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://images.unsplash.com/photo-1612195325284-c16da65be55d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=857&q=80");
 min-height: 100%;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 position: relative; 
 }
-
 /* Place text in the middle of the image */
 .hero-text {
 text-align: center;
@@ -23,4 +21,57 @@ left: 50%;
 transform: translate(-50%, -50%);
 color: white;
 font-family: 'Montserrat', sans-serif;
+line-height: 1.6rem;
+} 
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: transparent; 
+  width: 50%; 
+  margin: auto;
+  width: 50%; 
+  padding: 25px; 
+  font-family: 'Oswald', sans-serif;
+}
+li {
+  float: left; 
+}
+li:last-child {
+  border-right: none;
+} 
+.nav-link {
+  padding: 15px;
+}
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+} 
+.hero-text p {
+  color: rgba(34, 34, 34, 0.712);
+}
+.hero-text h1 {
+  color: #fff;
+  font-weight: 800;
+}
+.hero-text button {
+  background-color: #ec348c;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 30px 15px 30px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+@media screen and (max-width: 600px) {
+  .navbar {
+    font-size: 10px;
+  }
 }
